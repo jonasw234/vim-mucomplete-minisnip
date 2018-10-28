@@ -5,3 +5,4 @@ Makes [Minisnip](https://github.com/joereynolds/vim-minisnip) snippets available
 Add the following to your .vimrc:
 `let mucomplete#user_mappings          = {'minisnip': "\<C-r>=MUcompleteMinisnip#complete()\<CR>"}`
 and add the `minisnip` chain somewhere to your completion chains.
+Use a plugin manager or manual installation to add “MUcompleteMinisnip.vim” to your autoload directory.
