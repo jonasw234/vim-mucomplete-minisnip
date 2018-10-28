@@ -1,5 +1,5 @@
 # vim-mucomplete-minisnip
-Makes [Minisnip](https://github.com/joereynolds/vim-minisnip) snippets available in [µcomplete](https://github.com/lifepillar/vim-mucomplete).
+Makes [Minisnip](https://github.com/joereynolds/vim-minisnip) snippets available as a completion chain in [µcomplete](https://github.com/lifepillar/vim-mucomplete).
 
 ## Installation
 Add the following to your .vimrc:
