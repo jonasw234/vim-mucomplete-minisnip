@@ -18,10 +18,9 @@ function! MUcompleteMinisnip#candidates() abort
 	  let g:pathsep = s:pathsep()
 	endif
 
+	let l:global_snippets = map(glob(split(g:minisnip_dir, g:pathsep)[0] . '/[^_]*', v:false, v:true), {key, val ->
+		\ fnamemodify(val, ':t')})
 	for l:dir in split(g:minisnip_dir, g:pathsep)
-		echo l:dir
-		let l:global_snippets = map(glob(l:dir . '/[^_]*', v:false, v:true), {key, val ->
-			\ fnamemodify(val, ':t')})
 		let l:filetype_snippets = map(glob(l:dir . '/_' . &filetype . '_*', v:false,
 			\ v:true), {key, val -> substitute(fnamemodify(val, ':t'), '^_' . &filetype . '_', '',
 			\ '')})
